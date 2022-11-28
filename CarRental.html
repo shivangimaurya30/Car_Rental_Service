@@ -1,19 +1,174 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Car Rental Service</title>
-    </head>
-    <body>
-        <body style="background-color:black;"></body>
-        <img src="https://logos-download.com/wp-content/uploads/2018/01/McLaren_logo_cube-700x700.png" alt="Mclaren Logo" width="70" height="80">
-        <!-- <button type="button" onclick="alert('Hello world!')">Click Me!</button> -->
-        <hr style="height:2px;background-color:rgb(255, 255, 255)">
-        <a href="https://www.ferrari.com/en-IN">
-        <img src="https://wallpaperaccess.com/full/48837.jpg" alt="white ferrari" width="525" height="280"></a>
-        <a href="https://www.mclaren.com/">
-        <img src="https://wallpaperaccess.com/full/324278.jpg" alt="orange mclaren" width="525" height="280"></a>
-        <a href="https://www.bugatti.com/chiron/">
-        <img src="https://wallpapercave.com/dwp2x/wp4946133.jpg" alt="Buggati" width="525" height="280"></a>
-        <hr style="height:2px;background-color:rgb(255, 255, 255)">
-    </body>
+
+<head>
+    <title>Car Rental Service</title>
+    <link rel="stylesheet" href="styesheet.css">
+</head>
+
+<body>
+    <div>
+        <span class="logo">
+            <img src="https://i.pinimg.com/564x/09/97/c5/0997c5f5d2390d34202e8dd8261db18e.jpg"
+                alt="Website Logo" width="140" height="80">
+        </span>
+    </div>
+    <div class="texts">
+        <p>
+            <center>Car Rental Service </center>
+        </p>
+    </div>
+
+
+    <button class="Loginbutton" onclick="showmodel()">Login</button>
+
+
+    <div class="loginform">
+        <span onclick="closemodel()">&times;</span> <!-- &times created the exit cross button -->
+        <div>
+            <label for="">Username</label>
+            <input type="text" />
+        </div>
+
+        <div>
+            <label for="">Password</label>
+            <input type="password" />
+        </div>
+        <button>Login</button>
+    </div>
+
+
+    <a href="carcollection.html">
+        <button class="Signupbutton">Car Store</button>
+    </a>
+
+
+    <a href="teammembers.html">
+        <button class="bookingbutton">Our Teams</button>
+    </a>
+
+
+    <a href="">
+        <button class="popularbutton">Popular Location</button>
+    </a>
+
+
+
+    <hr class="newline">
+    <a href="https://www.ferrari.com/en-IN">
+        <img class="ferrari" src="https://wallpaperaccess.com/full/48837.jpg" alt="white ferrari"></a>
+
+    <a href="https://www.mclaren.com/">
+        <img class="mclaren" src="https://wallpaperaccess.com/full/324278.jpg" alt="orange mclaren"></a>
+
+    <a href="https://www.bugatti.com/chiron/">
+        <img class="bugatti" src="https://wallpapercave.com/dwp2x/wp4946133.jpg" alt="Buggati" style="position:fixed;"
+            width="525" height="280"></a>
+
+    <hr class="newzline">
+    <div class="verticalline"></div>
+
+    <select class="dropdown">
+        <option disabled selected>Pick Up Location</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="bengluru">Bengluru</option>
+        <option value="kochi">Kochi</option>
+        <option value="kolkata">Kolkata</option>
+        <option value="Chandigarh">Chandigarh</option>
+    </select>
+
+    <div class="date">
+        <form>
+            <label>
+                <input type="date" name="pickupdate" min="2022-11-01" max="3022-11-01" />
+            </label>
+        </form>
+    </div>
+
+    <span class="date-text">
+        Pick Up Date:
+    </span>
+
+    <div class="date-drop">
+        <form>
+            <label>
+                <input type="date" name="dropdate" min="2022-11-01" max="3022-11-01" />
+            </label>
+        </form>
+    </div>
+
+    <span class="drop-text">
+        Drop Off Date:
+    </span>
+
+    <select class="purpose">
+        <option disabled selected>Purpose Of Rental</option>
+        <option value="tour">Tour</option>
+        <option value="wedding">Wedding</option>
+        <option value="savegas">Save Gas</option>
+        <option value="showoff">Show Off</option>
+        <option value="testdrive">Test Drive</option>
+        <option value="dreamcar">Dream Car</option>
+        <option value="otherreason">Other Reason</option>
+    </select>
+
+    <span class="hint">
+        * Check Car Store For More Cars
+    </span>
+
+    <select class="carsname">
+        <option disabled selected>Select Car</option>
+        <option value="bugatti">Bugatti</option>
+        <option value="mclaren">McLaren</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="gtr">GTR</option>
+        <option value="supra">Supra</option>
+        <option value="madza">Madza</option>
+        <option value="lamborghini">Lamborghini</option>
+        <option value="porche">Porche</option>
+        <option value="rolls">Rolls Royce</option>
+        <option value="bentley">Bentley</option>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="rangerover">Range Rover</option>
+        <option value="tata">TATA</option>
+        <option value="maserati">Maserati</option>
+        <option value="gordonmurray">Gordon Murray</option>
+        <option value="mustang">Mustang</option>
+        <option value="astonmartin">Aston Martin</option>
+    </select>
+
+    <a href="">
+        <button class="buynow">Proceed</button>
+    </a>
+
+    <span class="popular">
+        Our Most Popular Location
+    </span>
+
+    <div >
+    <img class="carzshowroom1" src="https://i.insider.com/62618bf3478dfc00185a0534?width=1200&format=jpeg"
+        alt="car carcolletion">
+       
+
+
+    <img class="carzshowroom2"
+        src="https://c4.wallpaperflare.com/wallpaper/546/508/885/individual-color-collection-bmw-i8-supercar-wallpaper-preview.jpg"
+        alt="car carcolletions">
+    <img class="carzshowroom3" src="https://www.barakabits.com/wp-content/uploads/2016/12/Supercars-in-Dubai.jpg"
+        alt="car carcolletionss">
+    <img class="carzshowroom4" src="https://emirateswoman.com/wp-content/uploads/2021/09/Police-cars.png"
+        alt="car carcolletionsss">
+
+</body>
+<script>
+    function showmodel() {
+        document.querySelector('.loginform').classList.add('showloginform');  //This code shows the login prompt
+    }
+    function closemodel() {
+        document.querySelector('.loginform').classList.remove('showloginform');  //This code hides the Login prompt
+    }
+</script>
+
 </html>
